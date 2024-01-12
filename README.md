@@ -16,20 +16,30 @@ Esse projeto foi desenvolvido com Django, utilizando Generic View, Model Seriali
 
 ## Configuração do Ambiente Virtual (Opcional, mas recomendado)
 ### Crie um ambiente virtual
-```python -m venv venv```
+```
+    python -m venv venv
+```
 
 ### Ative o ambiente virtual
 #### No Windows
-```venv\Scripts\activate```
+```
+    venv\Scripts\activate
+```
 #### No Linux/Mac
-```source venv/bin/activate```
+```
+    source venv/bin/activate
+```
 
 
 ## Instalar o Django:
-```pip install django```
+```
+    pip install django
+```
 
 ## Instalação das Dependencias
-```pip install -r requirements.txt```
+```
+    pip install -r requirements.txt
+```
 
 
 ## Configuração do banco de dados:
@@ -38,11 +48,17 @@ Esse projeto foi desenvolvido com Django, utilizando Generic View, Model Seriali
 
 ## Migrações e Aplicações
 ### Execute as migrações
-```python manage.py makemigrations```
-```python manage.py migrate```
+```
+    python manage.py makemigrations
+```
+```
+    python manage.py migrate
+```
 
 ### Inicie o servidor de desenvolvimento
-```python manage.py runserver```
+```
+    python manage.py runserver
+```
 
 
 
