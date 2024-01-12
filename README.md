@@ -1,4 +1,51 @@
-# M5 - BandKamp Generic View
+# BandKamp Generic View
+A linguagem utilizada foi Python.
+Esse projeto foi desenvolvido com Django, utilizando Generic View, Model Serializer e o Banco de Dados Postgres.  
+| Rotas               | Verbo HTTP | Objetivo                        |
+|---------------------|------------|---------------------------------|
+| /api/users/         | POST       | Registro de usuários            |
+| /api/users/pk/      | GET        | Busca por ID de usuários        |
+| /api/users/pk/      | PATCH      | Atualização de usuários         |
+| /api/users/pk/      | DELETE     | Deleção de usuários             |
+| /api/users/login/   | POST       | Login de usuários               |
+| /api/albums/        | GET        | Listagem de álbuns              |
+| /api/albums/        | POST       | Registro de álbuns              |
+| /api/albums/pk/songs/| GET        | Filtragem de músicas            |
+| /api/albums/pk/songs/| POST       | Registro de músicas             |
+| /api/docs/          | GET        | Documentação Swagger ou Redoc   |  
+
+## Configuração do Ambiente Virtual (Opcional, mas recomendado)
+### Crie um ambiente virtual
+```python -m venv venv```
+
+### Ative o ambiente virtual
+#### No Windows
+```venv\Scripts\activate```
+#### No Linux/Mac
+```source venv/bin/activate```
+
+
+## Instalar o Django:
+```pip install django```
+
+## Instalação das Dependencias
+```pip install -r requirements.txt```
+
+
+## Configuração do banco de dados:
+1. Crie um banco de dados PostgreSQL.
+2. Copie o arquivo .env.example para .env e configure as variáveis de ambiente relacionadas ao banco de dados.
+
+## Migrações e Aplicações
+### Execute as migrações
+```python manage.py makemigrations```
+```python manage.py migrate```
+
+### Inicie o servidor de desenvolvimento
+```python manage.py runserver```
+
+
+
 
 ## Preparando ambiente para execução dos testes
 
@@ -39,8 +86,6 @@ pip install pytest-testdox pytest-django
 
 
 ## Execução dos testes:
-
-Como este projeto se trata de uma refatoração, não terá divisão de testes por tarefa, pois o objetivo é que todos os testes continuem passando após a refatoração.
 Deste modo, para rodar a bateria de todos os testes, utilize:
 ```shell
 pytest --testdox -vvs
